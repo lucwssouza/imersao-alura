@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Alura</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hashiras - Demon Slayer</h1>
+        <span>Encontre aqui todos os hashiras do anime Demon Slayer!</span>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/giyuu.png" alt="" />
+                <div class="character-name">Giyuu Tomioka</div>
+                <p class="character-description">o Pilar da Água, é um homem reservado e de poucas palavras, conhecido
+                    por sua habilidade com a espada e sua Respiração da Água. Apesar de sua natureza distante, ele é um
+                    guerreiro leal e dedicado, com um passado marcado por traumas que o moldaram.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/shinobu.png" alt="" />
+                <div class="character-name">Shinobu Kocho</div>
+                <p class="character-description">A Pilar dos Insetos, Shinobu é uma jovem frágil, mas extremamente
+                    inteligente e habilidosa em manipular venenos. Apesar de sua aparência delicada, ela é uma guerreira
+                    implacável contra os demônios, utilizando sua inteligência e veneno para derrotá-los.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/rengoku.png" alt="" />
+                <div class="character-name">Kyojuro Rengoku</div>
+                <p class="character-description">O Pilar das Chamas, Kyojuro era um homem caloroso e bondoso, sempre
+                    pronto a ajudar os outros. Sua habilidade com a espada era impressionante, e sua Respiração das
+                    Chamas era um espetáculo de força e poder. Sua morte trágica marcou profundamente os personagens e
+                    os fãs.</p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/mitsuri.png" alt="" />
+                <div class="character-name">Mitsuri Kanroji</div>
+                <p class="character-description">A Pilar do Amor, Mitsuri era uma jovem gentil e compassiva, com uma
+                    força física incrível. Sua Respiração do Amor a permitia usar sua flexibilidade e força para
+                    derrotar seus inimigos. Apesar de sua aparência frágil, ela era uma guerreira poderosa.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/obanai.png" alt="" />
+                <div class="character-name">Obanai Iguro</div>
+                <p class="character-description">O Pilar das Serpentes, Obanai era um homem reservado e misterioso, com
+                    uma cobra como companheira. Sua habilidade com a espada era excepcional, e sua Respiração das
+                    Serpentes era rápida e letal. Obanai tinha uma personalidade complexa, marcada por um passado
+                    doloroso</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/sanemi.png" alt="" />
+                <div class="character-name">Sanemi Shinazugawa</div>
+                <p class="character-description">O Pilar do Vento, Sanemi era um homem rude e impulsivo, com um
+                    temperamento explosivo. Apesar de sua personalidade difícil, ele era um guerreiro leal e dedicado à
+                    Caça aos Demônios. Sua Respiração do Vento era poderosa e imprevisível.</p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/gyomei.png" alt="" />
+                <div class="character-name">Gyomei Himejima</div>
+                <p class="character-description">O Pilar da Rocha, Gyomei era um homem cego de grande força física e
+                    espiritual. Sua habilidade com a espada era incomparável, e sua Respiração da Rocha era poderosa e
+                    devastadora. Gyomei era um homem gentil e compassivo, apesar de sua aparência imponente.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/uzui.png" alt="" />
+                <div class="character-name">Tengen Uzui</div>
+                <p class="character-description">O Pilar do Som, Tengen era um homem extravagante e confiante, com três
+                    esposas ninjas. Sua habilidade com a espada e sua audição aguçada o tornavam um adversário
+                    formidável. Tengen era conhecido por seu estilo de vida exuberante e sua personalidade carismática.
+                </p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <img src="assets/muichiro.png" alt="" />
+                <div class="character-name">Muichiro Tokito</div>
+                <p class="character-description">O Pilar da Névoa, Muichiro era um jovem de personalidade misteriosa e
+                    habilidades excepcionais. Sua Respiração da Névoa era rápida e imprevisível, tornando-o um oponente
+                    formidável. Apesar de sua pouca idade, Muichiro era um dos Hashira mais fortes.</p>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <img id="modal-img" src="" alt="Character Image" />
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+                <p id="modal-name"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        © Lucas Souza - Todos os direitos reservados.
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/lucaassouza2/" target="_blank">Linkedin</a>
+            <a href="https://github.com/lucwssouza" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
